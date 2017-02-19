@@ -11,7 +11,10 @@ preload(
        'https://newevolutiondesigns.com/images/freebies/animals-background-15.jpg',
        'https://images7.alphacoders.com/503/503155.jpg',
        'https://newevolutiondesigns.com/images/freebies/animals-background-3.jpg',
-       'http://livehdwallpaper.com/wp-content/uploads/2016/09/beautiful-Animal-Wallpapers-HD-Pictures.jpg'
+       'http://livehdwallpaper.com/wp-content/uploads/2016/09/beautiful-Animal-Wallpapers-HD-Pictures.jpg',
+       'http://www.modernhdwallpaper.com/image/9/Ladybugs%20Insect%20wallpaper%201680x1050.jpg',
+       'http://eskipaper.com/images/snake-background-1.jpg',
+       'https://images2.alphacoders.com/836/thumb-1920-83660.jpg'
       );
 
 function preload(){
