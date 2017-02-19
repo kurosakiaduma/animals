@@ -1,15 +1,21 @@
-body{
-	background-size: cover;
-	overflow: hidden;
+body {
+    background-size: cover;
+    overflow: hidden;
 }
 
 .selectric-customOptions .ico {
-  display: inline-block;
-  vertical-align: middle;
-  zoom: 1;
-  *display: inline;
-  height: 30px;
-  width: 30px;
-  margin: 0 6px 0 0;
-  background: url(img/browser-icons.png) no-repeat;
+    display: inline-block;
+    vertical-align: middle;
+    zoom: 1;
+    *display: inline;
+    height: 30px;
+    width: 30px;
+    margin: 0 6px 0 0;
+    background: url(img/browser-icons.png) no-repeat;
+}
+
+#natgeo {
+    color: rgb(255, 255, 255);
+    margin-left: 600px;
+    margin-top: 580px;
 }
