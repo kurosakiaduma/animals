@@ -47,5 +47,8 @@ if(window.attachEvent){
  }
 }
 
+$(function() {
+  $('select').selectric();
+});
 
 });
