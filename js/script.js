@@ -1,55 +1,48 @@
 $(document).ready(function() {
-    $("#link").click(function() {
-        $(".img").fadeIn(4000);
-    });
-    $("button#bw").click(function() {
-        $("body").removeClass();
-        $("body").addClass("black-background");
-    });
-    $("button#wb").click(function() {
-        $("body").removeClass();
-        $("body").addClass("white-background");
-    });
-    $("button#bb").click(function() {
-        $("body").removeClass();
-        $("body").addClass("blue-background");
-    });
+    var num;
+  var temp=0;
+  var speed=5000; /* this is set for 5 seconds, edit value to suit requirements */
+  var preloads=[];
 
-    (function() {
+/* add any number of images here */
 
-        // Create input element for testing
-        var inputs = document.createElement('input');
+preload(
+       'https://images4.alphacoders.com/125/125088.jpg',
+       'https://newevolutiondesigns.com/images/freebies/animals-background-15.jpg',
+       'https://images7.alphacoders.com/503/503155.jpg',
+       'https://newevolutiondesigns.com/images/freebies/animals-background-3.jpg',
+       'http://livehdwallpaper.com/wp-content/uploads/2016/09/beautiful-Animal-Wallpapers-HD-Pictures.jpg'
+      );
 
-        // Create the supports object
-        var supports = {};
+function preload(){
 
-        supports.autofocus = 'autofocus' in inputs;
-        supports.required = 'required' in inputs;
-        supports.placeholder = 'placeholder' in inputs;
+for(var c=0;c<arguments.length;c++) {
+  preloads[preloads.length]=new Image();
+  preloads[preloads.length-1].src=arguments[c];
+ }
+}
 
-        // Fallback for autofocus attribute
-        if (!supports.autofocus) {
+function rotateImages() {
+  num=Math.floor(Math.random()*preloads.length);
+if(num==temp){
+  rotateImages();
+}
+else{
+  document.body.style.backgroundImage='url('+preloads[num].src+')';
+  temp=num;
 
-        }
+setTimeout(function(){rotateImages()},speed);
+ }
+}
 
-        // Fallback for required attribute
-        if (!supports.required) {
+if(window.addEventListener){
+  window.addEventListener('load',function(){setTimeout(function(){rotateImages()},speed)},false);
+}
+else {
+if(window.attachEvent){
+  window.attachEvent('onload',function(){setTimeout(function(){rotateImages()},speed)});
+ }
+}
 
-        }
-
-        // Fallback for placeholder attribute
-        if (!supports.placeholder) {
-
-        }
-
-        // Change text inside send button on submit
-        var send = document.getElementById('contact-submit');
-        if (send) {
-            send.onclick = function() {
-                this.innerHTML = '...Sending';
-            }
-        }
-
-    })();
 
 });
