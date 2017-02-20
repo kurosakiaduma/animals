@@ -1,5 +1,5 @@
-# Mayfair Cupcake Shop
-This is a webpage about a popular shop known for its speciality in cupcakes. It features the different kinds of cupcakes that are sold at the shop. 
+# Learn about animals
+This is a website that is in a full-screen background format that provides facts about a few listed animals .
 
 
 ### Prequisites
@@ -10,11 +10,11 @@ This is a webpage about a popular shop known for its speciality in cupcakes. It 
 1. To view the raw code of the webpage you will probably need a text editor e..g **Atom** or **Brackets**
 
 ### Installing
-* Using your **Terminal**, you will need to clone/fork the repository containing the root folder to your computer using this command: $ git clone https://github.com/kurosakiaduma/cupcake
+* Using your **Terminal**, you will need to clone/fork the repository containing the root folder to your computer using this command: $ git clone https://github.com/kurosakiaduma/animals
 
 OR
 
-* Directly download the root folder to your computer using [this link](https://github.com/kurosakiaduma/cupcake/archive/master.zip)
+* Directly download the root folder to your computer using [this link](https://github.com/kurosakiaduma/animals/archive/master.zip)
 
 ## Deployment
 1. After unpacking the contents, use **Atom** to open the **HTML** and **CSS** to view the source code of the project.
@@ -24,6 +24,7 @@ OR
 ##Built with
 * HTML
 * CSS
+* Javascript
 
 ## Author
 The author of this project is Tevin Joel Aduma
