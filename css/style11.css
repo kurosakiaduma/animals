@@ -17,6 +17,11 @@ html,body {
 	margin:0;
 	padding:0;
 }
+
+p.header{
+    color: white;
+    font-weight: bold;
+}
 table {
 	border-collapse:collapse;
 	border-spacing:0;
